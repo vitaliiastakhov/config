@@ -1,0 +1,38 @@
+{
+  "exportAs": {
+    "prefix": "expdas",
+    "body": [
+      "export { ${2} as ${3} } from '${1}'",
+
+    ],
+
+  },
+  "exportDestructured": {
+    "prefix": "expd",
+    "body": [
+      "export { ${2} } from '${1}'",
+    ],
+  },
+  "publicApiFull": {
+    "prefix": "papif",
+    "body": [
+      "import { ${2} } from '${1}';",
+      "",
+      "export {",
+      "  ${3} ",
+      "}",
+    ],
+  },
+  "publicApiSmall": {
+    "prefix": "papis",
+    "body": [
+      "export { ${2} } from '${1}';",
+    ],
+  },
+  "html": {
+    "prefix": "divx",
+    "body": [
+      "<div className={$1}>$2</div>",
+    ],
+  },
+}
