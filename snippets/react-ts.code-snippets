@@ -1,0 +1,18 @@
+{
+  "typescriptReactComponent": {
+    "scope": "javascript, typescript, typescriptreact",
+    "prefix": "rts",
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}: FC = () => {",
+      "  return (",
+      "    <${02:div}>",
+      "      ${0}",
+      "    </${02:div}>",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system"
+  },
+}
