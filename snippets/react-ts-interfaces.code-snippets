@@ -1,0 +1,39 @@
+{
+  "typescriptReactComponentWithInterface": {
+    "scope": "typescriptreact",
+    "prefix": "rtsi",
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "interface ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Props { }",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}: FC<${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Props> = () => {",
+      "  return (",
+      "    <${02:div}>",
+      "      ${0}",
+      "    </${02:div}>",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface"
+  },
+  // "typescriptReactComponentForWithInterfaceAndClassnames": {
+  //   "scope": "typescriptreact",
+  //   "prefix": "rtsic",
+  //   "body": [
+  //     "import { FC } from 'react';",
+  //     "import classes from '${1}';",
+  //     "",
+  //     "interface ${2:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Props { }",
+  //     "",
+  //     "export const ${2:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}: FC<${2:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Props> = () => {",
+  //     "  return (",
+  //     "    <${3:div}>",
+  //     "      ${0}",
+  //     "    </${3:div}>",
+  //     "  )",
+  //     "}"
+  //   ],
+  //   "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface. And import css-module as 'classes'"
+  // }
+}
