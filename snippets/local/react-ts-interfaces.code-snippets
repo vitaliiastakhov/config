@@ -1,0 +1,24 @@
+{
+	"typescriptReactComponentWithInterfaceAndClassnames": {
+    "scope": "typescriptreact",
+    "prefix": "rtsic",
+    "body": [
+      "import type { FC, HTMLAttributes } from 'react';",
+      "import cls from '${1}';",
+      "import { classNames } from 'shared/lib/classNames';",
+      "",
+      "interface ${2:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Props extends HTMLAttributes<HTMLDivElement> { }",
+      "",
+      "export const ${2:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}: FC<${2:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Props> = (props) => {",
+      "  const { className, ...rest } = props;",
+      "",
+      "  return (",
+      "    <${3:div} className={classNames(cls.${TM_FILENAME_BASE/(.*)/${1:/downcase}/}, {}, [className])} {...rest}>",
+      "      ${0}",
+      "    </${3:div}>",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface. And import css-module as 'cls'"
+  }
+}
