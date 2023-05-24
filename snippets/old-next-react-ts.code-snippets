@@ -1,0 +1,40 @@
+{
+  "typescriptReactComponentForNextPageWithInterface": {
+    "scope": "typescriptreact",
+    "prefix": "noprtsi",
+    "body": [
+      "import { NextPage } from 'next';",
+      "",
+      "interface ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}PageProps { }",
+      "",
+      "const ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Page: NextPage<${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}PageProps> = () => {",
+      "  return (",
+      "    <${02:div}>",
+      "      ${0}",
+      "    </${02:div}>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Page"
+    ],
+    "description": "Creates a React Function Component with ES7 module system and TypeScript interface for Next.js Old Page Structure"
+  },
+  "typescriptReactComponentForNextPage": {
+    "scope": "typescriptreact",
+    "prefix": "noprts",
+    "body": [
+      "import { NextPage } from 'next';",
+      "",
+      "const ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Page: NextPage = () => {",
+      "  return (",
+      "    <${02:div}>",
+      "      ${0}",
+      "    </${02:div}>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Page"
+    ],
+    "description": "Creates a React Function Component with ES7 module system for Next.js Old Page Structure"
+  },
+}
